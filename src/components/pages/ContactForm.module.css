@@ -1,0 +1,100 @@
+.first__row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .inner__first__row {
+    width: 100%;
+  }
+  .input__text {
+    width: 100%;
+  }
+  .email__section {
+    margin-bottom: 24px;
+  }
+  label {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+  }
+  .input__box {
+    border-radius: 4px;
+    border: 1px solid rgba(208, 213, 221, 1);
+    width: 100%;
+    padding: 10px 14px;
+  }
+  .small {
+    color: red;
+  }
+  .text__area__box {
+    width: 100%;
+    height: 132px;
+    line-height: 1;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid rgba(208, 213, 221, 1);
+    padding: 10px 14px;
+  }
+  .text__area {
+    resize: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+  }
+  .input__checkbox {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+  }
+  .supporting__text {
+    margin-left: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #475467;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  .check__box {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid rgba(208, 213, 221, 1);
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+  }
+  .check__box::before {
+    content: '';
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/icon-check.svg');
+    background-size: 14px;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.15s;
+  }
+  
+  input[type='checkbox']:checked + .check__box::before {
+    display: block;
+  }
+  .btn__submit {
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(21, 112, 239, 1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 0;
+  }
+  @media (max-width: 500px) {
+    .first__row {
+      flex-direction: column;
+    }
+  }
+  
